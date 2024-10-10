@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1dcc9;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #17395c;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+#logo{
+    color: white;
+    font-size: 40px;
+}
+
+header h2{
+    text-align: right;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.selecionar-cidades-container{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    color: #17395c;
+}
+
+.selecionar-cidades-component label{
+    font-size: 1.5em;
+}
+
+#selecionar-cidades-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selecionar-cidades-form input[type='submit']{
+    width: 17.5%;
+}
+
+/*.selecionar-cidades-component .date-input{
+    width: 100%;
+}*/
+
+/*.selecionar-cidades-component{
+    
+}*/
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #17395c;
+    margin-bottom: 10px;
+}
+
+main p, main ul {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #f4f4f4;
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #17395c;
+}
+
+.container a{
+    color: #17395c;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color: #04172b;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type='date'],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #17395c;
+    box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type='date']:focus,
+select:focus {
+    outline: 2px solid #17395c;
+}
+
+input[type="submit"] {
+    background: #c24229;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: #812715;
+}
+
+button{
+    background: #c24229;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: #812715;
+}
+
+footer {
+    background-color: #efb758;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #17395c;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #c24229;
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: #812715;
+}
+
+footer time {
+    font-style: italic;
+}

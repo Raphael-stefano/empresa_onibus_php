@@ -11,15 +11,16 @@
     $email = $_SESSION['email'] ?? null;
     $cpf = $_SESSION['cpf'] ?? null;
     $telefone = $_SESSION['telefone'] ?? null;
+    $cidade = $_SESSION['cidade'] ?? null;
 
-    $obter_cidade = mysqli_query($con, "select c.nome
+    /*$obter_cidade = mysqli_query($con, "select c.nome
         from cidade c
         join passageiro p 
         on c.id_cidade = p.id_cidade and p.id_passageiro = '$id'");
 
-    $fecth_cidade = mysqli_fetch_assoc($obter_cidade);
+    $fecth_cidade = mysqli_fetch_assoc($obter_cidade);*/
 
-    $cidade = $fecth_cidade['nome'];
+    //$cidade = $fecth_cidade['nome'];
 
 ?>
 <!DOCTYPE html>
@@ -30,6 +31,9 @@
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap" rel="stylesheet">
 </head>
 <body>
 

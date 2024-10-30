@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #e1dcc9;
     margin: 0;
+}
+
+input{
+    font-family: "Poppins", sans-serif
 }
 
 header{
@@ -46,14 +50,31 @@ header nav a:hover{
 
 .selecionar-cidades-container{
     display: flex;
-    width: 800px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #17395c;
+}
+
+.selecionar-cidades-container:first-of-type{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     color: #17395c;
 }
 
+.selecionar-cidades-container:first-of-type .selecionar-cidades-component{
+    width: 80%;
+}
+
+.selecionar-cidades-container:first-of-type .selecionar-cidades-component label{
+    padding-left: 10px;
+}
+
 .selecionar-cidades-component label{
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 #selecionar-cidades-form{
@@ -61,19 +82,50 @@ header nav a:hover{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    padding: 30px 0px 70px;
+    height: 100%;
 }
+
+#selecionar-cidades-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Imagens/imagem2.jfif');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1000;
+    margin-bottom: -120px;
+}
+
+#selecionar-cidades-form select{
+    height: 4em;
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+/*#selecionar-cidades-form select option{
+    font-size: 1.2em;
+}*/
 
 #selecionar-cidades-form input[type='submit']{
     width: 17.5%;
+    font-size: 1.15em;
 }
 
-/*.selecionar-cidades-component .date-input{
+.selecionar-cidades-component .date-input{
     width: 100%;
-}*/
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
 
-/*.selecionar-cidades-component{
-    
-}*/
+.selecionar-cidades-container:last-of-type .selecionar-cidades-component{
+    width: 30%;
+}
 
 main {
     max-width: 800px;
@@ -192,6 +244,51 @@ button:hover{
     background: #812715;
 }
 
+
+.exibir-viagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.viagem{
+    border: 2px solid red;
+    border-radius: 30px;
+    width: 70%;
+    height: 175px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #17395c;
+}
+
+.viagem #logo{
+    width: 20%;
+    font-size: 8.5em;
+    color: #17395c;
+}
+
+.viagem button{
+    width: 18%;
+    height: 100px;
+}
+
+.viagem div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viagem p{
+    font-size: 1.25em;
+}
+
+
 footer {
     background-color: #efb758;
     padding: 20px;
@@ -205,14 +302,15 @@ footer {
 }
 
 .footer-content a {
-    color: #c24229;
+    color: #000000;
     text-decoration: underline;
 }
 
 .footer-content a:hover {
-    color: #812715;
+    color: #636363;
 }
 
 footer time {
     font-style: italic;
 }
+

@@ -15,4 +15,6 @@
         <p><?php echo $horario; ?></p>
     </div>
 
+    <button>Comprar passagem</button>
+
 </div>
